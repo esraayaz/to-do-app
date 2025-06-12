@@ -5,3 +5,8 @@ body {
     rgb(71, 30, 84) 119.9%
   );
 }
+
+.todos li {
+  background-color: #c5b3e6;
+  border-color: #c5b3e6;
+}
