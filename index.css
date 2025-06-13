@@ -6,6 +6,27 @@ body {
   );
 }
 
+.icon-input-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+
+.icon-input-container i {
+  margin-right: 10px;
+  color: #555;
+}
+
+.icon-input-container input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 8px 0;
+}
+
 .todos li {
   background-color: #c5b3e6;
   border-color: #c5b3e6;
@@ -13,4 +34,13 @@ body {
 
 .delete {
   cursor: pointer;
+}
+
+#esra {
+  text-decoration: none;
+}
+
+#esra:hover {
+  color: orangered;
+  transition: all 0.5s ease;
 }
