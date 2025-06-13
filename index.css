@@ -10,3 +10,7 @@ body {
   background-color: #c5b3e6;
   border-color: #c5b3e6;
 }
+
+.delete {
+  cursor: pointer;
+}
