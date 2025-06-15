@@ -6,12 +6,13 @@ const search = document.querySelector(".search input");
 // Functions
 const generateTemplate = (todo) => {
   const html = `
-    <ul class="list-group todos">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
+        <li class="list-group-item d-flex align-items-center">
             <span>${todo}</span>
-            <i class="fa-solid fa-trash delete"></i>
+            <div class="icons">
+              <i class="fa-solid fa-check"></i>
+              <i class="fa-solid fa-trash delete"></i>
+            </div>
         </li>
-    </ul>
     `;
   list.innerHTML += html;
 };
@@ -39,7 +40,24 @@ addForm.addEventListener("submit", (e) => {
 
 list.addEventListener("click", (e) => {
   if (e.target.classList.contains("delete")) {
-    e.target.parentElement.remove();
+    const listItem = e.target.closest("li.list-group-item");
+    if (listItem) {
+      listItem.remove();
+    }
+    return;
+  }
+  if (e.target.classList.contains("fa-check")) {
+    const todoItem = e.target.closest("li.list-group-item");
+    const todoText = todoItem.querySelector("span");
+    todoText.style.textDecoration =
+      todoText.style.textDecoration === "line-through"
+        ? "none"
+        : "line-through";
+    todoText.style.opacity = todoText.style.opacity === "0.5" ? "1" : "0.5";
+    todoItem.style.backgroundColor =
+      todoItem.style.backgroundColor === "rgb(148, 134, 173)" ? "" : "#9486ad";
+    todoItem.style.borderColor =
+      todoItem.style.borderColor === "rgb(148, 134, 173)" ? "" : "#9486ad";
   }
 });
 

@@ -6,12 +6,16 @@ body {
   );
 }
 
+.search input {
+  padding: 10px;
+}
+
 .icon-input-container {
   display: flex;
   align-items: center;
   background: white;
   border-radius: 6px;
-  padding: 0 10px;
+  padding: 2px 10px;
 }
 
 .icon-input-container i {
@@ -23,13 +27,22 @@ body {
 .icon-input-container input {
   border: none;
   width: 100%;
-  padding: 8px 0;
+  padding: 10px;
 }
 
 .todos li {
   background-color: #c5b3e6;
   border-color: #c5b3e6;
   margin: 5px 0;
+  justify-content: space-between;
+}
+
+.icons {
+  padding: 8px;
+}
+
+.fa-check {
+  margin-right: 20px;
 }
 
 .delete {
