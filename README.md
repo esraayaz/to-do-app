@@ -7,6 +7,4 @@
 
 💖 Design is the most enjoyable but also the most time-consuming part. To avoid spending too much time on this project, I used Bootstrap, which saved me a lot of time.
 
-https://github.com/user-attachments/assets/61ba8017-786f-46ba-b699-b035d3507c46
-
 
